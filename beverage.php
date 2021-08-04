@@ -5,6 +5,7 @@ class Beverage
     protected float $price;
     protected string $temperature;
     const barname = 'Het Vervolg';
+    private static string $address = "Melkmarkt 9, 2000 Antwerpen";
 
     function __construct(string $color, float $price, string $temperature = 'cold')
     {
@@ -45,5 +46,9 @@ class Beverage
     function getBarname()
     {
         return self::barname;
+    }
+    public static function getAddress()
+    {
+        return self::$address;
     }
 }

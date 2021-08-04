@@ -4,6 +4,7 @@ class Beverage
     protected string $color;
     protected float $price;
     protected string $temperature;
+    const barname = 'Het Vervolg';
 
     function __construct(string $color, float $price, string $temperature = 'cold')
     {
@@ -40,5 +41,9 @@ class Beverage
     function getTemperature()
     {
         return $this->temperature;
+    }
+    function getBarname()
+    {
+        return self::barname;
     }
 }

@@ -4,6 +4,7 @@ class Beer extends Beverage
 {
     private string $name;
     private float $alcoholpercentage;
+    const barname = 'Het Vervolg';
 
     function __construct(string $color, float $price, string $name, float $alcoholpercentage, string $temperature = 'cold')
     {
@@ -32,5 +33,9 @@ class Beer extends Beverage
     function getAlcoholpercentage()
     {
         return $this->alcoholpercentage;
+    }
+    function getBarname()
+    {
+        return self::barname;
     }
 }

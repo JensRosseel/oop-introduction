@@ -13,3 +13,9 @@ Instantiate an object which represents cola. Make sure that the color is set to 
 print the temperature on the screen.
 USE TYPEHINTING EVERYWHERE!
 */
+
+require 'beverage.php';
+
+$cola = new Beverage('black', 2);
+
+echo $cola->getInfo();

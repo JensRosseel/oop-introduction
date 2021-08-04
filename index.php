@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+require 'beverage.php';
+require 'beer.php';
+
 /* EXERCISE 1
 Create a class beverage.
 Create the properties color (string), price (float) and temperature (string) and also foresee a construct.
@@ -13,8 +16,6 @@ Instantiate an object which represents cola. Make sure that the color is set to 
 print the temperature on the screen.
 USE TYPEHINTING EVERYWHERE!
 */
-
-require 'beverage.php';
 
 $cola = new Beverage('black', 2);
 
@@ -33,8 +34,6 @@ Make sure that each print is on a different line.
 Try to get this error on the screen= Fatal error: Uncaught Error: Call to undefined method Beverage::getAlcoholpercentage() in /var/www/becode/workshop/exercise2.php on line 64
 USE TYPEHINTING EVERYWHERE!
 */
-
-require 'beer.php';
 
 $duvel = new Beer('blond', 3.5, 'Duvel', 8.5);
 
@@ -63,3 +62,17 @@ $duvel->setColor('light');
 echo "<br>{$duvel->getColor()}";
 echo "<br>{$duvel->getInfo()}";
 echo "<br>{$duvel->beerInfo()}";
+
+/* EXERCISE 4
+Copy the code of exercise 2 to here and delete everything related to cola.
+Make all properties protected.
+Make all the other prints work without error without changing the beverage class.
+USE TYPEHINTING EVERYWHERE!
+*/
+
+$duvel = new Beer('blond', 3.5, 'Duvel', 8.5);
+
+echo "<br>{$duvel->getAlcoholpercentage()}";
+echo "<br>{$duvel->getAlcoholpercentage()}";
+echo "<br>{$duvel->getColor()}";
+echo "<br>{$duvel->getInfo()}";

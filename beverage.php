@@ -2,8 +2,8 @@
 class Beverage
 {
     protected string $color;
-    private float $price;
-    private string $temperature;
+    protected float $price;
+    protected string $temperature;
 
     function __construct(string $color, float $price, string $temperature = 'cold')
     {
@@ -17,7 +17,7 @@ class Beverage
         return "This beverage is {$this->temperature} and {$this->color}";
     }
 
-    function setColor($color)
+    function setColor(string $color)
     {
         $this->color = $color;
     }
@@ -25,7 +25,7 @@ class Beverage
     {
         return $this->color;
     }
-    function setPrice($price)
+    function setPrice(float $price)
     {
         $this->price = $price;
     }
@@ -33,7 +33,7 @@ class Beverage
     {
         return $this->price;
     }
-    function setTemperature($temperature)
+    function setTemperature(string $temperature)
     {
         $this->temperature = $temperature;
     }

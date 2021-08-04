@@ -17,7 +17,7 @@ class Beer extends Beverage
         return "Hi i'm {$this->name} and have an alcohol percentage of {$this->alcoholpercentage} and I have a {$this->color} color";
     }
 
-    function setName($name)
+    function setName(string $name)
     {
         $this->name = $name;
     }
@@ -25,7 +25,7 @@ class Beer extends Beverage
     {
         return $this->name;
     }
-    function setAlcoholpercentage($alcoholpercentage)
+    function setAlcoholpercentage(float $alcoholpercentage)
     {
         $this->alcoholpercentage = $alcoholpercentage;
     }
